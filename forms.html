@@ -6,13 +6,42 @@
     <title>Forms Demo</title>
   </head>
   <body>
+    <!-- give each input a label and id, this makes the label clickable -->
+    <!-- give each input a label and id, this makes the label clickable -->
+    <!-- give each input a label and id, this makes the label clickable -->
+    <!-- give each input a label and id, this makes the label clickable -->
+    <!-- give each input a label and id, this makes the label clickable -->
+    <!-- give each input a label and id, this makes the label clickable -->
     <h1>Forms Demo</h1>
     <form action="/tacos">
-      <label for="username">Enter a Username:</label>
-      <input id="username" type="text" placeholder="user name" />
-      <input type="password" placeholder="enter your password" />
-      <input type="color" />
-      <input type="number" placeholder="1234" />
+      <p>
+        <label for="username">Enter a Username:</label>
+        <input id="username" type="text" placeholder="user name" />
+      </p>
+      <p>
+        <label for="password">Enter your password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="enter your password"
+        />
+      </p>
+      <p>
+        <label for="color">Pick a color</label>
+        <input id="color" type="color" />
+      </p>
+      <p>
+        <label for="number">Enter a number</label>
+        <input id="number" type="number" placeholder="1234" />
+      </p>
+      <!-- when pressed the submit button will try to find /tacos BECAUSE THE BUTTON IS IN THE FORM THAT SAYS /tacos -->
+      <button>Submit</button>
+      <!-- this button will not submit even though it is inside the form because of the "type"attribute -->
+      <button type="button">Regular button (won't submit)</button>
+      <!-- this one will submit too, but not used as often because harder to style and change text -->
+      <input type="submit" value="Click Me" />
     </form>
+    <!-- this one is OUTSIDE THE FORM, so no default behavio -->
+    <button>Not Inside Form</button>
   </body>
 </html>
