@@ -64,21 +64,32 @@ name = value, you're sending with the name to search for the value-->
     </form>
     <h2>More Inputs!</h2>
     <form action="/birds">
+      <!-- can make automatically checked like below -->
       <input type="checkbox" name="agree_tos" id="agree" checked />
       <label for="agree">I agree to the terms</label>
       <p>
         <!-- we want the radio buttons to be connected in this case to only be able to choose one,
-        we do this by giving them the same name -->
+        we do this by giving them the same name 
+      adding the value attribute will tell us which one was selected and submitted to the server-->
         <label for="s">Small:</label>
-        <input type="radio" name="size" id="s" />
+        <input type="radio" name="size" id="s" value="small" />
 
         <label for="med">Medium:</label>
-        <input type="radio" name="size" id="med" />
+        <input type="radio" name="size" id="med" value="medium" />
 
         <label for="lg">Large:</label>
-        <input type="radio" name="size" id="lg" />
+        <input type="radio" name="size" id="lg" value="large" />
       </p>
+      <p>
+        <!-- dropdown -->
+        <label for="meal">Please select an entree</label>
+        <select name="meal" id="meal">
+          <option value="fish">Fish</option>
+          <option value="chick">Chicken</option>
+          <option value="veg">Vegetarian</option>
+        </select>
+      </p>
+      <button>Submit</button>
     </form>
-    <button>Submit</button>
   </body>
 </html>
