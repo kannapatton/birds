@@ -62,5 +62,23 @@ name = value, you're sending with the name to search for the value-->
       <input type="text" name="search_query" />
       <button>Search Youtube</button>
     </form>
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I agree to the terms</label>
+      <p>
+        <!-- we want the radio buttons to be connected in this case to only be able to choose one,
+        we do this by giving them the same name -->
+        <label for="s">Small:</label>
+        <input type="radio" name="size" id="s" />
+
+        <label for="med">Medium:</label>
+        <input type="radio" name="size" id="med" />
+
+        <label for="lg">Large:</label>
+        <input type="radio" name="size" id="lg" />
+      </p>
+    </form>
+    <button>Submit</button>
   </body>
 </html>
