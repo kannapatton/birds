@@ -39,7 +39,15 @@ name = value, you're sending with the name to search for the value-->
       </p>
       <p>
         <label for="number">Enter a number</label>
-        <input id="number" type="number" placeholder="1234" name="num" />
+        <input
+          id="number"
+          type="number"
+          placeholder="1234"
+          name="num"
+          min="25"
+          max="95"
+          step="10"
+        />
       </p>
       <!-- when pressed the submit button will try to find /tacos BECAUSE THE BUTTON IS IN THE FORM THAT SAYS /tacos -->
       <button>Submit</button>
@@ -90,7 +98,34 @@ name = value, you're sending with the name to search for the value-->
           <option value="veg">Vegetarian</option>
         </select>
       </p>
+      <p>
+        <label for="cheese">Amount of Cheese</label>
+        <input
+          type="range"
+          id="cheese"
+          min="0"
+          max="100"
+          step="5"
+          name="cheese_level"
+        />
+      </p>
+      <p>
+        <!-- text areas are NOT INPUTS -->
+        <label for="request">Special Requests?</label>
+        <br />
+        <textarea
+          name="Requests?"
+          id="request"
+          cols="20"
+          rows="2"
+          placeholder="Make your request here"
+        ></textarea>
+      </p>
       <button>Submit</button>
     </form>
+    <label for="story">Tell us a story....</label>
+    <textarea name="story" id="story" cols="30" rows="10">
+It was a dark and stormy night......</textarea
+    >
   </body>
 </html>
